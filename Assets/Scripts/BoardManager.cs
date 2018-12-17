@@ -25,12 +25,11 @@ public class BoardManager : MonoBehaviour {
 
 	private void Update() {
 		if (Input.GetMouseButton(0)) {
-			RaycastHit hit;
-			Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
-        
-			if (Physics.Raycast(ray, out hit)) {
+			Vector2 rayPos = _camera.ScreenToWorldPoint(Input.mousePosition);
+			RaycastHit2D hit = Physics2D.Raycast(rayPos, Vector2.zero, 0f);
+			if (hit) {
 				Transform objectHit = hit.transform;
-				Debug.Log("Hitted");
+			
 				if (!_isCellSelected) {
 					_isCellSelected = true;
 					_currentlySelected = new Vector2Int((int)objectHit.position.x, (int)objectHit.position.y);
