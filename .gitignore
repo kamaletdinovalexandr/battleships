@@ -4,3 +4,4 @@ Temp/
 *.csproj
 ProjectSettings/
 obj/
+.vs

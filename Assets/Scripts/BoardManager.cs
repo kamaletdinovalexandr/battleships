@@ -24,22 +24,27 @@ public class BoardManager : MonoBehaviour {
 	}
 
 	private void Update() {
-		if (Input.GetMouseButton(0)) {
+		if (Input.GetMouseButtonUp(0)) {
 			Vector2 rayPos = _camera.ScreenToWorldPoint(Input.mousePosition);
 			RaycastHit2D hit = Physics2D.Raycast(rayPos, Vector2.zero, 0f);
 			if (hit) {
 				Transform objectHit = hit.transform;
-			
+				var clickPosition = new Vector2Int((int) objectHit.position.x, (int) objectHit.position.y);
+				
 				if (!_isCellSelected) {
 					_isCellSelected = true;
-					_currentlySelected = new Vector2Int((int)objectHit.position.x, (int)objectHit.position.y);
+					_currentlySelected = clickPosition;
 					_cells[_currentlySelected.x, _currentlySelected.y].ToggleSelection((true));
 
 				}
-				else if (_isCellSelected) {
+				else if (_isCellSelected && _currentlySelected == clickPosition) {
 					_cells[_currentlySelected.x, _currentlySelected.y].ToggleSelection((false));
-					_currentlySelected = new Vector2Int((int)objectHit.position.x, (int)objectHit.position.y);
-					_cells[_currentlySelected.x, _currentlySelected.y].ToggleSelection((true));
+					_isCellSelected = false;
+				}
+				else {
+					_cells[_currentlySelected.x, _currentlySelected.y].ToggleSelection((false));
+					_cells[clickPosition.x, clickPosition.y].ToggleSelection(true);
+					_currentlySelected = clickPosition;
 				}
 					
 			
