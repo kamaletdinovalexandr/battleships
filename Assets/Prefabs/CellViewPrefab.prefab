@@ -20,10 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4804428393578946}
   - component: {fileID: 212282050861105344}
-  - component: {fileID: 114915896218528930}
   - component: {fileID: 61206881421529198}
+  - component: {fileID: 114069678882553498}
   m_Layer: 0
-  m_Name: Cell
+  m_Name: CellViewPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67,7 +67,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114915896218528930
+--- !u!114 &114069678882553498
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -81,7 +81,7 @@ MonoBehaviour:
   _imageEmpty: {fileID: 21300000, guid: e63060a82ded36b458ab71aca4069f86, type: 3}
   _imageFilled: {fileID: 21300000, guid: aa9d12cf199869843972c66ce564ecf3, type: 3}
   _imageDestroyed: {fileID: 21300000, guid: bce7fc6676b6ac04b8f6cea908820290, type: 3}
-  _imageSelected: {fileID: 21300000, guid: 6518a0ee5e5046149988a81e29237c06, type: 3}
+  _imageMissed: {fileID: 21300000, guid: 3b9fb590bde8b4854a2982b02fb1fa87, type: 3}
 --- !u!212 &212282050861105344
 SpriteRenderer:
   m_ObjectHideFlags: 1

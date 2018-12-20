@@ -4,5 +4,7 @@ using UnityEngine;
 
 public class Admiral {
 
-	List<Ship> Ships = new List<Ship>();
+	public List<Ship> Ships { get; set; }
+
+
 }
