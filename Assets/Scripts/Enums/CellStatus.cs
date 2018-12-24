@@ -1,3 +1,5 @@
-﻿public enum CellStatus {
-	Uknown, Destroyed, Missed
+﻿namespace  Enums {
+	public enum CellStatus {
+		Unknown, Destroyed, Missed
+	}
 }

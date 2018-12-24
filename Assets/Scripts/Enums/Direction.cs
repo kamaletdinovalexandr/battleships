@@ -1,3 +1,6 @@
-﻿public enum Direction {
-	up, down, left, right
+﻿namespace  Enums {
+	public enum Direction {
+		Up, Down, Left, Right
+	}
 }
+

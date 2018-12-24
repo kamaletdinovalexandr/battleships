@@ -1,3 +1,5 @@
-﻿public interface IGameState {
-	void ExecuteState();
+﻿namespace GameStates {
+    public interface IGameState {
+        void ExecuteState();
+    }
 }

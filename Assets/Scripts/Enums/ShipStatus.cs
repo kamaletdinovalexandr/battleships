@@ -1,3 +1,5 @@
-﻿public enum ShipStatus  {
-	Healthy, Damaged, Destroyed
+﻿namespace Enums {
+	public enum ShipStatus  {
+		Healthy, Damaged, Destroyed
+	}
 }

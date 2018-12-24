@@ -1,13 +1,17 @@
-﻿public class ShipsPlacementState : IGameState {
+﻿using Managers;
 
-	private GameManager _gameManager;
+namespace GameStates {
+	public class CustomPlacementState : IGameState {
 
-	public ShipsPlacementState(GameManager gameManager) {
-		_gameManager = gameManager;
-	}
+		private GameManager _gameManager;
 
-	public void ExecuteState() {
-		throw new System.NotImplementedException();
+		public CustomPlacementState(GameManager gameManager) {
+			_gameManager = gameManager;
+		}
+
+		public void ExecuteState() {
+			throw new System.NotImplementedException();
+		}
 	}
 }
 
