@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37313208, g: 0.3807497, b: 0.358726, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -214,7 +214,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 537647054}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8428c124261194111bb75b0fc9e28210, type: 3}
+  m_Script: {fileID: 11500000, guid: 85d2d34921e9ce846b112098a41acb76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   BoardWidth: 10
@@ -318,7 +318,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1753562598}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcbe2e3e0fb5943478e36c2e42266c75, type: 3}
+  m_Script: {fileID: 11500000, guid: 57e0af3076d765741b985393896ee02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _cellPrefab: {fileID: 1054836317101740, guid: 86721e0cd4d42664fb2c7dd3193a192d,
